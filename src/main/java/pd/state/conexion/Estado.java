@@ -8,7 +8,7 @@ public abstract class Estado {
 	
 	public abstract void recibir(int respuesta, Conexion conexion);
 	
-	public abstract void enviar(String msg, Conexion conexion);
+	public abstract void enviar(String msg, Link link, Conexion conexion);
 
 	public abstract void iniciar(Conexion conexion);
 	

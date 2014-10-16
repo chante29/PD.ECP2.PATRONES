@@ -41,7 +41,7 @@ public class Conexion {
     }
 
     public void enviar(String msg) {
-        estado.enviar(msg, this);
+        estado.enviar(msg,this.link, this);
     }
 
     public void recibir(int respuesta) {
