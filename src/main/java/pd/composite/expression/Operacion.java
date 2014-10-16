@@ -19,6 +19,5 @@ public abstract class Operacion extends Expresion{
 		return expresion2;
 	}
 	
-	public abstract double operar();
 
 }

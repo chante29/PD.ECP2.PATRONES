@@ -8,15 +8,13 @@ public class Restar extends Operacion{
 	}
 
 	@Override
-	public double operar() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int operar() {
+		return this.getExpresion1().operar() - this.getExpresion2().operar();
 	}
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "(" + this.getExpresion1().toString() + "-" + this.getExpresion2().toString() + ")";
 	}
 
 }

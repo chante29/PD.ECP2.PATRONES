@@ -8,14 +8,13 @@ public class Numero extends Expresion{
 	}
 
 	@Override
-	public double operar() {
+	public int operar() {
 		return numero;
 	}
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		return String.valueOf(numero);
 	}
 	
 	
