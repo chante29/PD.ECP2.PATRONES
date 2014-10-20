@@ -5,14 +5,17 @@ import java.util.ArrayList;
 public abstract class Composite extends Componente{
 	private ArrayList<Componente> componentes;
 	
+	public Composite(){
+		componentes = new ArrayList<Componente>();
+	}
+	
 	public ArrayList<Componente> getComponentes(){
 		return componentes;
 	}
 	
 	@Override
 	public boolean isComposite() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 	
 	@Override
@@ -26,4 +29,22 @@ public abstract class Composite extends Componente{
 	}
 	
 	protected abstract String addFinalDibujar();
+	
+	@Override
+	public void add(Componente componente) {
+		if(componente.isComposite()){
+			 lanzarAddComposite(componente);
+		}else if(!componente.isComposite()){
+			lanzarAddNoComposite(componente);
+		}else{
+			assert false : mensajeAssert();
+		}
+		
+	}
+
+	protected abstract String mensajeAssert();
+
+	protected abstract void lanzarAddNoComposite(Componente componente);
+
+	protected abstract void lanzarAddComposite(Componente componente);
 }

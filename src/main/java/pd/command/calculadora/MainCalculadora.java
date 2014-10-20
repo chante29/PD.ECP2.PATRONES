@@ -1,13 +1,9 @@
 package pd.command.calculadora;
 
-import es.upm.miw.pd.command.calculator.solution.ComandoImprimir;
-import es.upm.miw.pd.command.calculator.solution.ComandoIniciar;
-import es.upm.miw.pd.command.calculator.solution.ComandoRestar;
-import es.upm.miw.pd.command.calculator.solution.ComandoSumar;
 import upm.jbb.IO;
 
 public class MainCalculadora {
-    private GestorComandos gestor;
+ /*   private GestorComandos gestor;
 
     public MainCalculadora() {
         Calculadora calc = new Calculadora();
@@ -25,5 +21,5 @@ public class MainCalculadora {
 
     public static void main(String[] args) {
         IO.in.addController(new MainCalculadora());
-    }
+    }*/
 }

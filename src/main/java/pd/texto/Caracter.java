@@ -5,7 +5,7 @@ public class Caracter extends Componente{
 	private char intrinseco;
 	
 	public Caracter(char caracter){
-		intrinseco = Character.toLowerCase(caracter);
+		intrinseco = caracter;
 	}
 	
 	public char getIntrinseco(){
@@ -27,7 +27,9 @@ public class Caracter extends Componente{
 
 	@Override
 	public void add(Componente componente) {
-		// TODO Auto-generated method stub
+		if(componente.isComposite()){
+			 throw new UnsupportedOperationException("No se pueden añadir compuestos a un caracter");
+		}
 		
 	}
 
