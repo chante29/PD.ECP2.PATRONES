@@ -3,7 +3,7 @@ package pd.command.calculadora;
 import upm.jbb.IO;
 
 public class MainCalculadora {
- /*   private GestorComandos gestor;
+    private GestorComandos gestor;
 
     public MainCalculadora() {
         Calculadora calc = new Calculadora();
@@ -21,5 +21,5 @@ public class MainCalculadora {
 
     public static void main(String[] args) {
         IO.in.addController(new MainCalculadora());
-    }*/
+    }
 }

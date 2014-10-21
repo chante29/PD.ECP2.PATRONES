@@ -5,7 +5,7 @@ import java.util.Map;
 
 
 public class GestorComandos {
-/*    private Map<String, Comando> comandos = new HashMap<>();
+   private Map<String, Comando> comandos = new HashMap<>();
 
     public void add(Comando comando) {
         this.comandos.put(comando.name(), comando);
@@ -17,5 +17,5 @@ public class GestorComandos {
 
     public String[] keys() {
         return this.comandos.keySet().toArray(new String[0]);
-    }*/
+    }
 }
