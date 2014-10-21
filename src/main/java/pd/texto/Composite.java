@@ -30,6 +30,10 @@ public abstract class Composite extends Componente{
 	
 	protected abstract String addFinalDibujar();
 	
+	public void delete(Componente componente){
+		componentes.remove(componente);
+	}
+	
 	@Override
 	public void add(Componente componente) {
 		if(componente.isComposite()){

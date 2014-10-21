@@ -26,4 +26,7 @@ public class Parrafo extends Composite{
 		throw new UnsupportedOperationException("No se pueden añadir compuestos a un parrafo");
 		
 	}
+
+
+
 }
