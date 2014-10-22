@@ -2,21 +2,19 @@ package pd.command.calculadora;
 
 public class CalculadoraMementable extends Calculadora implements Mementable<MementoCalculadora>{
 
-	private int memento;
 	
-	public CalculadoraMementable(int memento){
+	public CalculadoraMementable(){
 		super();
-		this.memento = memento;
 	}	
 	
 	@Override
 	public MementoCalculadora createMemento() {
-		return null;
+		return new MementoCalculadora(this.getTotal());
 	}
 
 	@Override
 	public void restoreMemento(MementoCalculadora memento) {
-		// TODO Auto-generated method stub
+		this.setTotal(memento.getMemento());
 		
 	}
 

@@ -1,14 +1,24 @@
 package pd.command.calculadora;
 
 public abstract class ComandoMementableAbstract extends ComandoAbstract{
+	
+	private CalculadoraMementable calcMem;
 
-	private CalculadoraMementable Calculadora;
 	private GestorMementos<MementoCalculadora> gestorMementos;
 	
-	public ComandoMementableAbstract(CalculadoraMementable calculadora) {
+	public ComandoMementableAbstract(CalculadoraMementable calculadora, GestorMementos<MementoCalculadora> gm) {
 		super(calculadora);
-		this.Calculadora = calculadora;
-		gestorMementos = new GestorMementos<MementoCalculadora>();
+		this.calcMem = calculadora;
+		gestorMementos = gm;
+	}
+	
+	public CalculadoraMementable getCalculadoraMementable(){
+		return calcMem;
+	}
+	
+	
+	public GestorMementos<MementoCalculadora> getGestorMementos(){
+		return this.gestorMementos;
 	}
 	
 	
